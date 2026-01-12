@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadon Simpson | Web Developer & Voice Artist</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bison:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu" onclick="openNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div id="myNav" class="overlay">
+        <div id="overlay-content">
+            <ul id="menu">
+                <li><a data-text="Home" href="index.html">Home</a></li>
+                <li><a data-text="About" href="#">About</a></li>
+                <li><a data-text="Resume" href="#">Resume</a></li>
+                <li><a data-text="Projects" href="#">Projects</a></li>
+            </ul>
+            <div class="vertical-line"></div>
+            <div class="close-btn" onclick="closeNav()">&times;</div>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jadon-simpson-4b9b572b8" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <i class="fa-regular fa-envelope"></i>    
+            <i class="fa-brands fa-github"></i>  
+        </div>
+    </div>
+    
+    <main id="home">
+        <div class="intro">
+            <h1>Computer Science Student & Voice Talent</h1> 
+            <p>
+                I'm Jadon Simpson. I build clean, functional websites and provide professional voice-overs for brands and stories. I’m currently focused on my CS studies while taking on creative projects that bridge the gap between code and performance.
+            </p>
+            <button class="btn-1" onclick="scrollToSection('project')">
+                <div class="original">My Work</div>
+                <div class="letters">
+                    <span>M</span><span>Y</span><span>&nbsp;</span>
+                    <span>W</span><span>O</span><span>R</span><span>K</span>
+                </div>
+            </button>
+        </div>
+    <div class="profile-pic">
+        <img src="img/gradPho1.jpg" alt="Jadon Simpson profile picture"> 
+    </div>
+    </main>
+
+    <section id="about" class="section-container">
+        <div class="section-content">
+            <h2>How I Work</h2> <div class="about-story">
+            <p>
+                My interest in web development started with a simple question: how does this actually work? That curiosity led me to pursue Computer Science, where I’ve learned to appreciate the logic behind a well-built site.
+            </p>
+            <p>
+                Parallel to my technical side is my work in voice acting. I've always loved the impact a voice can have on a story. Whether I'm debugging code or in front of a microphone, my goal is the same: to deliver something polished, reliable, and engaging.
+            </p>
+        </div>
+
+        <div class="about-approach">
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <h3>01</h3>
+                    <h4>Continuous Learning</h4>
+                    <p>As a student, I'm always looking for better ways to write code and improve my development workflow.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>02</h3>
+                    <h4>Practical Design</h4>
+                    <p>I focus on building interfaces that are easy to navigate and work exactly as they should.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>03</h3>
+                    <h4>Vocal Range</h4>
+                    <p>I enjoy the challenge of adapting my tone—moving from professional narration to high-energy character work.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>04</h3>
+                    <h4>Open Communication</h4>
+                    <p>I believe the best results come from actually listening to what a client needs and talking through the process clearly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="portfolio" id = "project">
+        <h1>Projects</h1>
+        <div class="project-wrapper">
+            <div class="project">
+                <img src="img/Screenshot 2024-07-22 111513.png">
+                <div class="text">
+                    <h3>FoodLink</h3>
+                    <p>Worked with a team during a hackathon at CIBC SQUARE to build a solution focused on community impact.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="text">
+                    <h3>Illustrix</h3>
+                    <p>A personal experiment in image processing. I built this to learn how to manipulate photo filters and basic editing tools in a web environment.
+                    </p>
+                </div>
+                <img src="img/Screenshot 2024-07-22 111541.png">
+            </div>
+            <div class="project">
+                <img src="img/Screenshot 2024-07-22 113212.png">
+                <div class="text">
+                    <h3>Personal</h3>
+                    <p>This mini project alllowed me to explore multiple animation techniques and I was able to discover new styles
+                        and elements, which aided my future designs.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="text">
+                    <h3>Course Compass</h3>
+                    <p>An app I'm currently building to help students navigate high school prerequisites and university requirements.
+                    </p>
+                </div>
+                <img src="img/courseCompass.png">
+            </div>
+            <div class="project">
+                <img src="img/Untitled design (1).png">
+                <div class="text">
+                    <h3>First creation</h3>
+                    <p>This website is my first ever creation.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="text">
+                    <h3>Treasure Trouble</h3>
+                    <p>My first deep dive into Java logic. This ISU project taught me the fundamentals of game loops and event handling.
+                    </p>
+                </div>
+                <img src="img/Screenshot 2024-07-22 145711.png">
+            </div>
+        </div>
+     </section>
+     <footer>
+        <p>"Believe you can and you're halfway there." – Theodore Roosevelt</p>
+    </footer>
+
+    <!-- Loading Page -->
+    <div class="loading-page">
+        <svg id="svg" width="238" height="61" viewBox="0 0 238 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.99 53.07L0.92 38.405V26.295L21.99 11.49V24.055L9.32 32.35L21.99 40.47V53.07ZM19.295 47.715V42.185L6.765 34.065V30.705L19.295 22.445V16.915L3.055 28.115V36.69L19.295 47.715ZM56.4634 53L49.2184 45.79V33.295H59.1234V40.96L61.2584 43.095H71.6884L73.8234 40.96V13.905H55.9034V4H83.7284V45.79L76.4834 53H56.4634ZM57.7934 50.165H75.2584L81.1384 44.32V6.625H58.4934V11.14H76.6234V42.15L73.0884 45.685H59.9984L56.4284 42.15V35.92H51.9484V44.32L57.7934 50.165ZM108.389 60.035L117.139 0.499996H127.044L118.294 60.035H108.389ZM111.434 57.375H115.949L124.069 3.055H119.554L111.434 57.375ZM159.378 53L152.168 45.79V36.97H162.073V40.96L164.208 43.095H177.648L179.783 40.96V35.57L177.648 33.435H159.588L152.378 26.225V11.21L159.588 4H181.813L189.023 11.21V20.03H179.118V16.04L176.983 13.905H164.418L162.248 16.04V21.395L164.418 23.53H182.478L189.688 30.74V45.79L182.478 53H159.378ZM160.638 50.305H181.043L186.888 44.46V31.72L181.393 26.19H163.158L159.588 22.655V14.71L163.123 11.21H178.418L181.813 14.535V17.545H186.293V12.365L180.623 6.695H160.918L155.073 12.54V24.79L160.988 30.74H179.188L182.373 33.82V42.29L178.838 45.825H162.843L159.483 42.465V39.455H154.968V44.635L160.638 50.305ZM216.936 53.07V40.47L229.606 32.35L216.936 24.055V11.49L238.006 26.295V38.405L216.936 53.07ZM219.631 47.715L235.871 36.69V28.115L219.631 16.915V22.445L232.161 30.705V34.065L219.631 42.185V47.715Z" fill="black"/>
+            </svg> 
+            <div class="name-container">
+                <div class="logo-name">Jadon Simpson</div>
+            </div>                                                                                                
+     </div>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="portfolio.js"></script>
+
+</body>
+</html>
